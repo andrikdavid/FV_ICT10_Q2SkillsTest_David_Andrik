@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.608);
+    min-height: 100vh;
+    background-image: url('forest.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    padding-bottom: 50px; /* Prevents content from being hidden behind the fixed footer */
+}
+
+/* Glassmorphism Container Card */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.card-wrapper {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 28px;
+    padding: 40px 35px;
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* Header Styling */
+.header h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+}
+
+/* Input Section */
+.input {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+/* Pill-shaped Input Field */
+input[type="text"] {
+    width: 100%;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 25px;
+    padding: 0 20px;
+    color: #ffffff;
+    font-size: 0.95rem;
+    outline: none;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+input[type="text"]:focus {
+    border-color: #ffffff;
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Pill-shaped Submit Button */
+.footer button {
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+    color: #111111;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.footer button:hover {
+    background-color: rgba(255, 255, 255, 0.88);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.footer button:active {
+    transform: translateY(0);
+}
+
+/* Result Output Box */
+.result-box {
+    margin-top: 25px;
+    padding: 18px;
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 18px;
+    color: #ffffff;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    text-align: center;
+    backdrop-filter: blur(5px);
+}
+
+/* Fixed Bottom Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.677);
+    backdrop-filter: blur(5px);
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    letter-spacing: 1px;
+    z-index: 1000;
+}

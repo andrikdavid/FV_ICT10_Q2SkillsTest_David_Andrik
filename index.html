@@ -1,0 +1,67 @@
+<!-- Credits & Sources
+
+Webkit Shadows: https://html-css-js.com/css/generator/box-shadow/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="icon" href="Hogwarts Logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
+
+    <title>Non-Metal Finder</title>
+
+
+</head>
+
+<body>
+   <!-- Centers everything on the page -->
+    <div class="container">
+
+        <!-- Stacks the form card and the result box vertically -->
+        <div class="card-wrapper">
+
+            <form>
+
+                <div class="header">
+                    <h1>Non-Metal Finder</h1>
+                </div>
+
+                <div class="input">
+                    <label for="symbol">Element Symbol</label><br>
+                    <input type="text" id="symbol" placeholder=""><br>
+
+                <!-- Submit button. py-click runs the verify() functipn in main.py file -->
+                <div class="footer">
+                    <button type="button" id="loginBTN" py-click="finder">Enter</button>
+                </div>
+
+            </form>
+
+            <!-- Where the verification result shows up (updated by main.py) -->
+            <div id="result-box" class="result-box">
+                Please enter an element symbol.
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>David | Skills Test 1, 10-Sapphire © 2026</p>
+    </footer>
+
+    <script type="py" src="main.py"></script>
+
+</body>
+
+</html>

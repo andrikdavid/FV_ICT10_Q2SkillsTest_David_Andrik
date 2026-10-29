@@ -25,7 +25,7 @@ def finder(e):
     document.getElementById("result-box").innerHTML = ""
 
     # Get the symbol from the input field
-    symbol = document.getElementById("symbol").value.strip()
+    symbol = document.getElementById("symbol").value.strip().capitalize()
 
     # Use .get() to look up the symbol, and also checks if it doesn't exist (not found)
     result = nonmetals.get(symbol, ("Element not found", "-", "-"))
